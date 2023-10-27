@@ -1,3 +1,5 @@
-# Homework 1: Request/Response
+**Assignment Description:**
 
-Follow the instructions [here](https://github.com/Tech-at-DU/ACS1710-Web-Architecture/blob/master/Assignments/01-Request-Response.md) to complete and submit this assignment.
+Title: Web Response Request Application
+
+In this assignment, I developed a web-based application using Flask, a Python web framework, to handle HTTP responses and requests. The application will has various routes, each serving a specific purpose, from displaying information to handling form submissions. I implemented routes for different functionalities, such as displaying web pages, processing user input, and responding with appropriate messages.
