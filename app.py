@@ -39,7 +39,8 @@ def sayntimes(word, n):
     repeated_word = " ".join([word] * int(n))
     return repeated_word
 
-# Dice game that utlizes randint().
+# Dice game that utlizes randint()
+# Returns a random dice roll when you refresh the page.
 @app.route('/dicegame')
 def roll_dice():
     random_dice_roll = randint(1, 6)
