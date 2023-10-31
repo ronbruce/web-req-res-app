@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
 # Docstring describes a route in a readable way for a human.
-    return 'Are you there, world? It\'s, me, Ducky!'
+    return 'Are you there, world? It\'s me, Ducky!'
 
 # Route for favorite animal
 # Any value the user type in will be available in the <user_animal> variable
@@ -36,8 +36,11 @@ def multiply(number1, number2):
 # Say N Times route: Say a word a particular number of times
 @app.route('/sayntimes/<word>/<n>')
 def sayntimes(word, n):
-    repeated_word = " ".join([word] * int(n))
-    return repeated_word
+    if n.isnumeric():
+        repeated_word = " ".join([word] * int(n))
+        return repeated_word
+    else:
+        return "Invalid input for 'n'. Please provide a valid number."
 
 # Dice game that utlizes randint()
 # Returns a random dice roll when you refresh the page.
